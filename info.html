@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jaswanth Reddy Mooli</title>
+        
+        <script type="text/javascript" src="info.js"></script>
+        <link rel="stylesheet" href="normalize.css">
+
+        
+    </head>
+
+    <body>
+        <header>
+            Final Assessment (WEB222) - Information
+        </header>
+
+        <section id="main">
+            <div class="row">
+
+                <div class="column" id="column1">
+                    <nav>
+                        <ul>
+                            <li><a class="button" href="honesty.html">Honesty</a></li>
+                            <li><a class="button" href="info.html">Info</a></li>
+                            <li><a class="button" href="reflection.html">Reflection</a></li>
+                        
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="column" id="column12"><br>
+                    <h3 style="text-align: center">Personal Information</h3>
+
+                    <form action="https://httpbin.org/post" method="POST" id="form">
+
+                        <label for="firstname">First Name:</label> 
+                        <input type="text" name="firstname" id="firstname" /><br/><br>
+
+
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" name="lastname" id="lastname" /><br/> <br>
+
+
+                        <label for="password">Password:</label>
+                        <input type="password"  id="password" value=""><br><br>
+
+                        <label for="confirmPassword">Confirm Password:</label>
+                        <input type="password" id="confirmPassword" value=""><br><br>
+
+
+                        <label for="username">Username:</label>
+                        <input type="text" minlength="6" name="username" id="username" /><br><br>
+
+
+                        <label for="educationlevel">Education Level:</label>
+                        <input type="text" list="GradLevels" name="gradlevel" placeholder="Click here to select" />
+                        <datalist id="GradLevels">
+                            <option value="Technical Diploma">Technical Diploma</option>
+                            <option value="College Diploma">College Diploma</option>
+                            <option value="Bachelor's Degree">Bachelor's Degree</option>
+                            <option value="Master's Degree">Master's Degree</option>
+                            <option value="Others">Others</option>
+                        </datalist> <br><br>
+
+
+                        <label for="educationstatus">Education Status</label>
+                        
+                        <ul>
+                            
+                            <li><input type="radio" name="status" id="status-1" value="graduated">Graduated</li>   
+                            <li><input type="radio" name="status" id="status-2" value="enrolled">Current Enrolled</li>  
+                            <li><input type="radio" name="status" id="status-3" value="notgraduated">Did Not Graduate</li> 
+                                
+                        </ul>  
+
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required="required"><br><br>
+
+
+                        <label for="age">Age:</label>
+                        <input type="number" name="age" min="18" max="60"><br><br>
+
+
+                        <input type="submit"  value="Submit">
+                        <input type="reset" value="Reset">
+
+                        <input type="hidden" name="Mooli" id="Mooli" value="Mooli" />
+                        <input type="hidden" name="165009192" id="165009192" value="165009192" />
+                    </form>
+
+                </div>
+
+                <div class="column" id="column3"  style="background-color: #FFCC66;">
+                    <h3 style="text-align: center">Errors</h3>
+                    <p id="errors"> </p> <br><br>
+
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <a href="https://github.com/jaswanth535/Final-Assessment" target="_blank">https://github.com/jaswanth535/Final-Assessment</a>
+        </footer>
+    </body>
